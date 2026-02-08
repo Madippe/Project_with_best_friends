@@ -1,0 +1,24 @@
+{
+    "extends": "./.svelte-kit/tsconfig.json",
+    "compilerOptions": {
+        "module": "NodeNext",
+        "moduleResolution": "NodeNext",
+        "target": "ES2020",
+        "outDir": "dist",
+        "lib": ["ES2020"],
+        "sourceMap": true,
+        "rootDir": "src",
+        "strict": true,
+        "noUncheckedIndexedAccess": true,
+        "noImplicitOverride": true,
+        "strictNullChecks": true,
+        "useUnknownInCatchVariables": true,
+        "strictFunctionTypes": true,
+        "noImplicitAny": true,
+        "strictPropertyInitialization": true,
+        "noFallthroughCasesInSwitch": true,
+        "erasableSyntaxOnly": true
+    },
+    "include": ["src", "vitest.config.ts", "eslint.config.ts", "vite.config.ts"],
+    "exclude": ["node_modules", ".vscode-test", "dist", "vitest.config.ts", "eslint.config.ts", "vite.config.ts"]
+}
